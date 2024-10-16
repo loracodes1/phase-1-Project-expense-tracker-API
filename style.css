@@ -1,5 +1,5 @@
 body {
-
+font-family: ;
 }
 
 header{
@@ -17,3 +17,10 @@ h1{
 form{
 
 }
+
+input, select, button{
+
+}
+ #expenses{
+
+ }
