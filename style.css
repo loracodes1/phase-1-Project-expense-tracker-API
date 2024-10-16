@@ -36,6 +36,11 @@ input, select, button{
     margin: 5px 0;
     background-color: #fff;
     border: 1px solid #ddd;
-
  }
- 
+
+ button.delete{
+    background-color: red;
+    color: white;
+    border: none;
+    
+ }
