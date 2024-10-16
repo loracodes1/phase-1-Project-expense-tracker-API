@@ -42,5 +42,6 @@ input, select, button{
     background-color: red;
     color: white;
     border: none;
-    
+    padding: 5px;
+    cursor: pointer;
  }
