@@ -20,10 +20,13 @@ margin: 0 auto;
 }
 
 form{
-
+display: flex;
+flex-direction: column;
 }
 
 input, select, button{
+    padding: 10px;
+    margin: 5px 0;
 
 }
  #expenses{
