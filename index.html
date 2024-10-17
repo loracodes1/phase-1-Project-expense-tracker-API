@@ -11,24 +11,24 @@
         <h1>Expense Tracker</h1>
     </header>
     <main>
-        <section id="expense form">
+        <section id="expense-form">
             <h2>Add Expenses</h2>
-            <form id="add-expense-form">
-                <input type="text" id="description" placeholder="Description" required>
-                <input type="text" id="amount" placeholder="Amount" required>
+            <form id="expenseForm">
+                <input type="text" id="expenseName" placeholder="Description" required>
+                <input type="text" id="expenseAmount" placeholder="Amount" required>
                 <select id="category" required>
                     <option value=""></option>
                     <option value="Groceries">Groceries</option>
                     <option value="Transport">Transport</option>
                     <option value="Entertainment">Entertainment</option>
                 </select>
-                <button type="submit">Add Expenses</button>
+                <button type="submit">Add Expense</button>
             </form>
         </section>
 
         <section id="expense-list">
             <h2>Expenses</h2>
-            <ul id="expenses"></ul>
+            <ul id="expenseList"></ul>
         </section>
     </main>
     <script src="app.js"></script>
