@@ -13,9 +13,9 @@
     <main>
         <section id="expense-form">
             <h2>Add Expenses</h2>
-            <form id="expenseForm">
-                <input type="text" id="expenseName" placeholder="Description" required>
-                <input type="text" id="expenseAmount" placeholder="Amount" required>
+            <form id="add-expense-form">
+                <input type="text" id="description" placeholder="Description" required> <!-- Updated input ID -->
+                <input type="number" id="amount" placeholder="Amount" required> <!-- Updated input ID -->
                 <select id="category" required>
                     <option value=""></option>
                     <option value="Groceries">Groceries</option>
@@ -28,7 +28,7 @@
 
         <section id="expense-list">
             <h2>Expenses</h2>
-            <ul id="expenseList"></ul>
+            <ul id="expenses"></ul>
         </section>
     </main>
     <script src="app.js"></script>
