@@ -27,7 +27,19 @@ function addExpense(event) {
       })
       .then(response => response.json())
       .then(() => {
-        fetchExpenses(); // Refresh the list
-        expenseForm.reset(); // Clear the form
+        fetchExpenses();
+        expenseForm.reset();
       });
     }
+
+    function deleteExpense(event) {
+        if (event.target.classList.contains('delete')) {
+          const id = event.target.getAttribute('data-id');
+      
+          fetch(`${apiUrl}/${id}`, {
+            method: 'DELETE'
+          })
+          .then(() => fetchExpenses()); // Refresh the list
+        }
+      }
+
