@@ -18,4 +18,16 @@ function addExpense(event) {
       description,
       amount: parseFloat(amount),category
     }
-    
+    fetch(apiUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(newExpense)
+      })
+      .then(response => response.json())
+      .then(() => {
+        fetchExpenses(); // Refresh the list
+        expenseForm.reset(); // Clear the form
+      });
+    }
