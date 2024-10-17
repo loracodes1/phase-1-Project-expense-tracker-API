@@ -26,34 +26,91 @@ main {
    gap: 20px;
 }
 
-#expense-form, #expense-list{
-max-width: 600px;
-margin: 0 auto;
+#expense-form, #expense-list {
+   background-color: #fff;
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   width: 100%;
+   max-width: 600px;
+   margin: 0 auto;
 }
 
-form{
-display: flex;
-flex-direction: column;
+/* Form Styles */
+form {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
 }
 
-input, select, button{
-    padding: 10px;
-    margin: 5px 0;
-
+input, select, button {
+   padding: 12px 15px;
+   border: 1px solid #ddd;
+   border-radius: 5px;
+   font-size: 1rem;
 }
- #expenses{
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    margin: 5px 0;
-    background-color: #fff;
-    border: 1px solid #ddd;
- }
 
- button.delete{
-    background-color: red;
-    color: white;
-    border: none;
-    padding: 5px;
-    cursor: pointer;
- }
+input:focus, select:focus {
+   border-color: #2d87d5;
+   outline: none;
+}
+
+button {
+   background-color: #2d87d5;
+   color: white;
+   border: none;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+button:hover {
+   background-color: #2368a2;
+}
+
+/* Expense List Styles */
+#expense-list ul {
+   list-style-type: none;
+   padding: 0;
+   margin: 20px 0;
+}
+
+#expenses li {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #f9f9f9;
+   padding: 15px;
+   border: 1px solid #ddd;
+   border-radius: 5px;
+   margin-bottom: 10px;
+}
+
+#expenses li:hover {
+   background-color: #f1f1f1;
+}
+
+/* Delete Button */
+button.delete {
+   background-color: #ff4d4d;
+   border: none;
+   color: white;
+   padding: 8px 12px;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+button.delete:hover {
+   background-color: #e60000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+   main {
+       flex-direction: column;
+   }
+
+   #expense-form, #expense-list {
+       width: 100%;
+   }
+}
