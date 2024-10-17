@@ -19,6 +19,13 @@ h1{
    margin-bottom: 10px;
 }
 
+main {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   gap: 20px;
+}
+
 #expense-form, #expense-list{
 max-width: 600px;
 margin: 0 auto;
