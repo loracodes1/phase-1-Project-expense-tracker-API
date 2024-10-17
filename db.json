@@ -1,1 +1,17 @@
-{}
+{
+    "expenses": [
+      {
+        "id": 1,
+        "description": "Groceries",
+        "amount": 50,
+        "category": "Food"
+      },
+      {
+        "id": 2,
+        "description": "Bus fare",
+        "amount": 2.5,
+        "category": "Transport"
+      }
+    ]
+  }
+  
