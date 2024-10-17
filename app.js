@@ -43,3 +43,9 @@ function addExpense(event) {
         }
       }
 
+
+      expenseForm.addEventListener('submit', addExpense);
+expenseList.addEventListener('click', deleteExpense);
+
+fetchExpenses();
+
