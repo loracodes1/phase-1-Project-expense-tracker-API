@@ -67,7 +67,7 @@ button:hover {
    background-color: #2368a2;
 }
 
-/* Expense List Styles */
+
 #expense-list ul {
    list-style-type: none;
    padding: 0;
@@ -89,7 +89,6 @@ button:hover {
    background-color: #f1f1f1;
 }
 
-/* Delete Button */
 button.delete {
    background-color: #ff4d4d;
    border: none;
@@ -104,7 +103,6 @@ button.delete:hover {
    background-color: #e60000;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
    main {
        flex-direction: column;
