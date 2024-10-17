@@ -1,5 +1,5 @@
 const expenseForm = document.getElementById('add-expense-form'); 
-const expenseList = document.getElementById('expenses'); 
+const expenseList = document.getElementById('expense-list'); 
 expenseForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
@@ -12,7 +12,6 @@ expenseForm.addEventListener('submit', (e) => {
         return;
     }
 
-    
     const expenseItem = document.createElement('li');
     expenseItem.innerHTML = `
         <span><strong>${description}</strong> - $${amount} (${category})</span>
