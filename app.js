@@ -6,3 +6,16 @@ function fetchExpenses(){
     .then(response => response.json)
     .then (expenses => displayExpenses(expenses));
 }
+
+function addExpense(event) {
+    event.preventDefault();
+  
+    const description = document.getElementById('description').value;
+    const amount = document.getElementById('amount').value;
+    const category = document.getElementById('category').value;
+  
+    const newExpense = {
+      description,
+      amount: parseFloat(amount),category
+    }
+    
