@@ -1,3 +1,5 @@
+const apiUrl = 'http://localhost:3000/expenses'
+
 const expenseForm = document.getElementById('add-expense-form');
 const expenseList = document.getElementById('expenses');
 
