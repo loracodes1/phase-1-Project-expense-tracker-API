@@ -150,7 +150,7 @@ generateReportButton.addEventListener('click', function(){
     
     for(const expense of all_expenses){
         total_amount = total_amount + parseInt(expense.amount);
-        reportList.innerHTML = `
+        reportList.innerHTML += `
             <tr>
                 <td>${expense.id}</td>
                 <td>${expense.category}</td>

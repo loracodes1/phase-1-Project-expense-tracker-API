@@ -6,6 +6,13 @@
       "amount": "200",
       "category": "Groceries",
       "date_added": "2024-10-18"
+    },
+    {
+      "description": "bought food ",
+      "amount": "1000",
+      "category": "Transport",
+      "date_added": "2024-10-19",
+      "id": "sjvd8s2"
     }
   ]
 }
