@@ -4,7 +4,7 @@ const dateAddedInput = document.getElementById('date_added');
 const generateReportButton = document.getElementById('generate-report');
 const reportList = document.getElementById('report-list');
 const reportTotalAmount = document.getElementById('report-total-amount');
-const base_uri = "http://localhost:3000";
+const base_uri = "https://phase-1-project-expense-tracker-api.onrender.com";
 let all_expenses = [];
 
 /*  {
