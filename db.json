@@ -1,17 +1,11 @@
 {
-    "expenses": [
-      {
-        "id": 1,
-        "description": "Groceries",
-        "amount": 500,
-        "category": "Food"
-      },
-      {
-        "id": 2,
-        "description": "Bus fare",
-        "amount": 200,
-        "category": "Transport"
-      }
-    ] 
-  }
-  
+  "expenses": [
+    {
+      "id": "9ac4",
+      "description": "bought food ",
+      "amount": "200",
+      "category": "Groceries",
+      "date_added": "2024-10-18"
+    }
+  ]
+}

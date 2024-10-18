@@ -22,7 +22,8 @@
                     <option value="Transport">Transport</option>
                     <option value="Entertainment">Entertainment</option>
                 </select>
-                <button type="submit">Add Expense</button>
+                <input type="date" id="date_added" placeholder="Date Added" required> <!-- Updated input ID -->
+                <button id="submit-button" type="submit">Add Expense</button>
             </form>
         </section>
 
@@ -30,6 +31,27 @@
             <h2>Expenses</h2>
             <div id="expense-list"></div>
         </section>
+
+        <section id="reports">
+            <div>
+                <button id="generate-report">Generate Report</button>
+            </div>
+            <h2>Report</h2>
+            <table>
+                <thead>
+                    <th>ID</th>
+                    <th>Category</th>
+                    <th>Amount</th>
+                    <th>Description</th>
+                    <th>Date</th>
+                </thead>
+                <tbody id="report-list"></tbody>
+                <tfoot>
+                    <td id="report-total-amount">Total amount: $</td>
+                </tfoot>
+            </table>
+        </section>
+
     </main>
     <script src="app.js"></script>
 </body>
