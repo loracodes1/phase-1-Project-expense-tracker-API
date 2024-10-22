@@ -25,6 +25,7 @@ const getExpenses = function() {
     .then((json) => json.json())
     .then((expenses) => {
         all_expenses = expenses;
+        expenseList.innerHTML = '';
 
         for(const expense of expenses) {
             const expenseItem = document.createElement('li');
